@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+body {
+  font-family: "Urbanist", sans-serif;
+}
+
+.text-primary {
+    color: #1A1A1A;
+}
+.text-secondary {
+    color: #798697;
+}
+.text-third {
+    color: #3E8EF4;
+}
+.bg-primary {
+    background-color: #3E8EF4;
+}
+.bg-primary:hover {
+    background-color: #3E8EF4CC;
+}
+.bg-secondary {
+    background-color: #F7F9FC;
+}
+.bg-main {
+    background-color: #FFFFFF;
+}
+.border-main {
+    border-color: #E5E7EB;
+}
+.bg-success {
+    border-color: #16A34A;
+}
+.bg-warning {
+    border-color: #FACC15;
+}
+.bg-error {
+    border-color: #EF4444;
+}
+.bg-info {
+    border-color: #17A2B8;
+}
+.font-regular {
+    font-weight: 400;
+}
+.font-medium {
+    font-weight: 500;
+}
+.font-semibold {
+    font-weight: 600;
+}
+.font-bold {
+    font-weight: 700;
+}
+.caption {
+    font-weight: 400;
+    line-height: 140%;
+    color: #212529;
+    font-size: 12px;
+}
+.link {
+    font-weight: 500;
+    line-height: 140%;
+    color: #212529;
+    font-size: 18px;
+}
+
+.hero {
+    background-image: url(/images/bg-main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
