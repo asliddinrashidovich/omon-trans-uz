@@ -2,10 +2,10 @@ import Button from "../ui/button";
 
 function ContactSection() {
   return (
-    <div className="py-20 bg-white">
-      <div className="max-w-[1200px] mx-auto grid grid-cols-2 gap-6">
-        <div className="flex rounded-[12px] overflow-hidden">
-          <img src="/images/img.png" className="object-cover" alt="truck" />
+    <div className="py-20 px-10 bg-white">
+      <div className="max-w-[1200px] mx-auto grid grid-cols-1 min-[950px]:grid-cols-2 gap-6">
+        <div className="flex w-full rounded-[12px] max-[950px]:h-[500px] overflow-hidden">
+          <img src="/images/img.png" className="object-cover max-[950px]:object-bottom-left w-full" alt="truck" />
         </div>
         <div className="flex flex-col p-6">
           <div className="flex items-center gap-2 mb-4">
@@ -51,7 +51,7 @@ function ContactSection() {
                 className="text-[18px] font-[500] leading-[150%] outline-none p-[14px] rounded-[8px] bg-[#F2F4F8] w-full mt-[6px] mb-6"
               ></textarea>
             </label>
-            <Button>
+            <Button className={"max-[950px]:w-full"}>
               Yuborish
             </Button>
           </form>

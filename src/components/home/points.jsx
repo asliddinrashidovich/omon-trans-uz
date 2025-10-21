@@ -1,6 +1,6 @@
 function PointsSection() {
   return (
-    <div className="py-20 bg-secondary">
+    <div className="py-20 px-10 bg-secondary">
       <div className="max-w-[1200px] mx-auto grid grid-cols-2 gap-6">
         <div className="flex flex-col">
           <div className="flex items-center gap-2 mb-4">

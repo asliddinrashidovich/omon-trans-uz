@@ -1,8 +1,8 @@
 function Footer() {
   return (
-    <div className="py-20 bg-secondary">
-      <div className="max-w-[1200px] mx-auto grid grid-cols-2 gap-6 mb-10">
-        <div className="grid grid-cols-2 gap-6">
+    <div className="py-20 px-10 bg-secondary">
+      <div className="max-w-[1200px] mx-auto grid grid-cols-2 max-[900px]:grid-cols-1 gap-6 mb-10">
+        <div className="max-w-[624px] grid grid-cols-2 gap-6">
           <div className="text-start flex-col">
             <h5 className="text-secondary text-[16px] font-[400] leading-[150%] mb-4">
               Xizmatlar
@@ -77,7 +77,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="max-[900px]:row-start-1">
           <a href="#" className="flex gap-[10px] items-center mb-6">
             <img src="/images/logo-mini.svg" alt="logo" />
             <p className="font-[700] text-primary text-[18px] leading-[120%]">

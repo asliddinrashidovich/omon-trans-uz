@@ -2,10 +2,10 @@ import Button from "../ui/button";
 
 function Hero() {
   return (
-    <div className="flex items-center hero h-[100vh]">
-      <div className="max-w-[1200px] mx-auto p-4 flex justify-between items-center gap-[228px]">
+    <div className="flex px-5 min-[550px]:px-10 py-[10px] items-center hero min-[900px]:h-[100vh]">
+      <div className="max-w-[1200px] pt-[150px] mx-auto min-[600px]:p-4 flex min-[900px]:flex-row flex-col justify-between items-center gap-6 min-[600px]:gap-8 min-[900px]:gap-[228px]">
         <div>
-          <h1 className="text-white mb-[24px] text-[56px] font-[600] leading-[120%]">
+          <h1 className="text-white mb-3 min-[550px]:mb-6 text-[38px] min-[550px]:text-[56px] font-[600] leading-[120%]">
             Ishonchli yuk tashish – sizga kerakli joyga, kerakli vaqtda!
           </h1>
           <p className="text-[#FFFFFFCC] text-[18px] font-[500] leading-[150%]">
@@ -13,7 +13,7 @@ function Hero() {
             Biz yuklaringizni xavfsiz, tez va samarali yetkazamiz.
           </p>
         </div>
-        <form className="bg-[#fff] rounded-[12px] p-6 max-w-[384px] w-full">
+        <form className="bg-[#fff] rounded-[12px] p-6 min-[900px]:max-w-[384px] w-full">
             <h2 className="text-primary mb-2 font-[500] text-[22px] leading-[130%]">Bog’lanish uchuh ariza qoldiring</h2>
             <p className="text-secondary text-[18px] font-[500] leading-[150%] mb-6">Yuk tashish kerakmi? Unda ariza qoldiring</p>
             <label htmlFor="name">
