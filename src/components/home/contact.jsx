@@ -2,20 +2,20 @@ import Button from "../ui/button";
 
 function ContactSection() {
   return (
-    <div className="py-20 px-10 bg-white">
+    <div className="py-10 min-[550px]:py-20 px-5 min-[550px]:px-10 bg-white">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 min-[950px]:grid-cols-2 gap-6">
-        <div className="flex w-full rounded-[12px] max-[950px]:h-[500px] overflow-hidden">
+        <div className="flex w-full rounded-[12px] max-[650px]:h-[360px] max-[950px]:h-[500px] overflow-hidden">
           <img src="/images/img.png" className="object-cover max-[950px]:object-bottom-left w-full" alt="truck" />
         </div>
         <div className="flex flex-col p-6">
           <div className="flex items-center gap-2 mb-4">
             <img src="/images/Polygon.svg" alt="polygon" />
-            <h3 className="font-[500] leading-[130%] text-[20px]">Aloqa</h3>
+            <h6 className="header6 text-primary">Aloqa</h6>
           </div>
-          <h3 className="font-[600] text-[36px] leading-[120%] text-primary mb-6">
+          <h2 className="header2 text-primary mb-6">
             Biz bilan bog‘laning
-          </h3>
-          <p className="font-[500] text-[18px] leading-[150%] text-secondary mb-6">
+          </h2>
+          <p className="paragraph-lg text-secondary mb-6">
             Savollaringiz bormi? Mutaxassislarimiz sizga tez orada javob beradi.
           </p>
 

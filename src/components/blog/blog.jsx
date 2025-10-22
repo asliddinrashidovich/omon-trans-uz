@@ -3,7 +3,7 @@ function Blog() {
     <div className="py-10 min-[600px]:py-20 px-5 min-[600px]:px-10 bg-white">
       <div className="max-w-[1335px] mx-auto pt-[90px]">
         <h2 className="header2 mb-10 text-primary text-center">Blog</h2>
-        <div className="grid grid-cols-2 min-[1000px]:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 min-[550px]:grid-cols-2 min-[1000px]:grid-cols-3 gap-6">
             <div>
                 <div className="rounded-[12px] mb-6">
                     <img src="/images/blog/card-1.png" className="w-full object-cover" alt="blog" />

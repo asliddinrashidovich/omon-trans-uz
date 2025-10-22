@@ -1,7 +1,7 @@
 
 function Difference() {
   return (
-    <div className="py-10 min-[600px]:py-20 px-5 min-[600px]:px-10 bg-white">
+    <div className="py-10 min-[550px]:py-20 px-5 min-[550px]:px-10 bg-white">
       <div className="max-w-[1200px] mx-auto flex flex-col min-[1000px]:flex-row gap-6 items-start mb-10">
         <div className="flex flex-col justify-between">
           <div className="flex items-center gap-2 mb-4">
@@ -12,7 +12,7 @@ function Difference() {
             Bizning afzalliklar — ishonchli hamkorlik asosi
           </h2>
         </div>
-        <div className="min-[1000px]:max-w-[486px] grid grid-cols-2 gap-6">
+        <div className="min-[1000px]:max-w-[486px] grid grid-cols-1 min-[550px]:grid-cols-2 gap-6">
           <div className="rounded-[12px] bg-secondary p-4">
             <h5 className="header5 text-primary mb-2">24/7 mijozlarni qo‘llab-quvvatlash</h5>
             <p className="paragraph-md text-secondary">Biz bilan bog‘lanish har doim oson — jamoamiz kun-u tun yordam berishga tayyor.</p>

@@ -1,41 +1,72 @@
-import { Link } from "react-router-dom"
+import { useEffect, useState } from "react";
+import { Link, useLocation, useParams } from "react-router-dom"
 
 function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const {pathname} = useLocation()
+  useEffect(() => {
+        const handleScroll = () => {setScrolled(window.scrollY > 50);};
+        window.addEventListener("scroll", handleScroll);
+        return () => {window.removeEventListener("scroll", handleScroll)};
+    }, []);
+
+  const getTextColor = (path) => {
+    if(scrolled) {
+      if(pathname === path) {
+        return "text-[#3E8EF4]"
+      } else {
+        return "text-[#fff]"
+      }
+    } else {
+      if(pathname === path) {
+        return "text-[#3E8EF4]"
+      } else {
+        return "text-[#1A1A1A]"
+      }
+    }
+  }
+  const getSpanWidth = (path) => {
+    if(pathname === path) {
+      return "w-full"
+    } else {
+      return "w-0"
+    }
+  }
   return (
     <div className="py-6 px-5 fixed w-full">
-      <div className="max-w-[1200px] mx-auto rounded-[12px] p-4 flex justify-between items-center">
+      <div className={`max-w-[1200px] mx-auto ${scrolled ? "bg-black/40" : ""}  backdrop-blur-[4px] rounded-[12px] p-4 flex justify-between items-center`}>
         <a href="/" className="flex items-center gap-[10px]">
           <img src="/images/logo-mini.svg" alt="main-logo" />
-          <p className="font-[700] text-[18px] leading-[120%] text-primary">OMON TRANS</p>
+          <p className={`font-[700] text-[18px] leading-[120%] ${scrolled ? "text-white" : "text-primary"}`}>OMON TRANS</p>
         </a>
         <ul className="hidden min-[950px]:flex items-center gap-6">
           <li className=" cursor-pointer relative  inline-block group">
-            <Link className="p-[6px] font-[400] translate-all duration-300  text-[16px] group-hover:text-[#3E8EF4] text-[#1A1A1A] leading-[150%]" to={"/"}>Bosh sahifa</Link>
-            <span className="absolute left-0 bottom-[-2px] rounded-[2px] h-[1px] w-0 bg-[#3E8EF4] transition-all duration-300 group-hover:w-full"></span>
+            <Link className={`p-[6px] font-[400] translate-all duration-300  text-[16px] ${getTextColor("/")} group-hover:text-[#3E8EF4]  leading-[150%]`} to={"/"}>Bosh sahifa</Link>
+            <span className={`absolute left-0 bottom-[-2px] rounded-[2px] h-[1px] ${getSpanWidth("/")}  bg-[#3E8EF4] transition-all duration-300 group-hover:w-full`}></span>
           </li>
           <li className=" cursor-pointer relative  inline-block group">
-            <Link className="p-[6px] font-[400] translate-all duration-300  text-[16px] group-hover:text-[#3E8EF4] text-[#1A1A1A] leading-[150%]" to={"/about"}>Biz haqimizda</Link>
-            <span className="absolute left-0 bottom-[-2px] rounded-[2px] h-[1px] w-0 bg-[#3E8EF4] transition-all duration-300 group-hover:w-full"></span>
+            <Link className={`p-[6px] font-[400] translate-all duration-300  text-[16px] ${getTextColor("/about")} group-hover:text-[#3E8EF4]  leading-[150%]`} to={"/about"}>Biz haqimizda</Link>
+            <span className={`absolute left-0 bottom-[-2px] rounded-[2px] h-[1px] ${getSpanWidth("/about")}  bg-[#3E8EF4] transition-all duration-300 group-hover:w-full`}></span>
           </li>
           <li className=" cursor-pointer relative  inline-block group">
-            <Link className="p-[6px] font-[400] translate-all duration-300  text-[16px] group-hover:text-[#3E8EF4] text-[#1A1A1A] leading-[150%]" to={"/services"}>Xizmatlar</Link>
-            <span className="absolute left-0 bottom-[-2px] rounded-[2px] h-[1px] w-0 bg-[#3E8EF4] transition-all duration-300 group-hover:w-full"></span>
+            <Link className={`p-[6px] font-[400] translate-all duration-300  text-[16px] ${getTextColor("/services")} group-hover:text-[#3E8EF4]  leading-[150%]`} to={"/services"}>Xizmatlar</Link>
+            <span className={`absolute left-0 bottom-[-2px] rounded-[2px] h-[1px] ${getSpanWidth("/services")}  bg-[#3E8EF4] transition-all duration-300 group-hover:w-full`}></span>
           </li>
           <li className=" cursor-pointer relative  inline-block group">
-            <Link className="p-[6px] font-[400] translate-all duration-300  text-[16px] group-hover:text-[#3E8EF4] text-[#1A1A1A] leading-[150%]" to={"/blog"}>Blog</Link>
-            <span className="absolute left-0 bottom-[-2px] rounded-[2px] h-[1px] w-0 bg-[#3E8EF4] transition-all duration-300 group-hover:w-full"></span>
+            <Link className={`p-[6px] font-[400] translate-all duration-300  text-[16px] ${getTextColor("/blog")} group-hover:text-[#3E8EF4]  leading-[150%]`} to={"/blog"}>Blog</Link>
+            <span className={`absolute left-0 bottom-[-2px] rounded-[2px] h-[1px] ${getSpanWidth("/blog")}  bg-[#3E8EF4] transition-all duration-300 group-hover:w-full`}></span>
           </li>
           <li className=" cursor-pointer relative  inline-block group">
-            <Link className="p-[6px] font-[400] translate-all duration-300  text-[16px] group-hover:text-[#3E8EF4] text-[#1A1A1A] leading-[150%]" to={"/avtopark"}>AvtoPark</Link>
-            <span className="absolute left-0 bottom-[-2px] rounded-[2px] h-[1px] w-0 bg-[#3E8EF4] transition-all duration-300 group-hover:w-full"></span>
+            <Link className={`p-[6px] font-[400] translate-all duration-300  text-[16px] ${getTextColor("/avtopark")} group-hover:text-[#3E8EF4]  leading-[150%]`} to={"/avtopark"}>AvtoPark</Link>
+            <span className={`absolute left-0 bottom-[-2px] rounded-[2px] h-[1px] ${getSpanWidth("/avtopark")}  bg-[#3E8EF4] transition-all duration-300 group-hover:w-full`}></span>
           </li>
         </ul>
         <select className="min-[950px]:flex hidden" name="lang" id="lang">
           <option value="uz">uz</option>
           <option value="ru">ru</option>
         </select>
-        <div className="w-[42px] h-[42px] min-[950px]:hidden flex  rounded-[12px] bg-white/20 cursor-pointer items-center justify-center">
-          <img src="/images/menu-bar.svg" alt="menu-bar" />
+        <div className="w-[42px] h-[42px] min-[950px]:hidden flex  rounded-[12px] bg-black/5 cursor-pointer items-center justify-center">
+          <img src="/images/menubar-dark.svg" alt="menu-bar" />
         </div>
       </div>
     </div>

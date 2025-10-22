@@ -8,7 +8,7 @@ function Hero() {
             Zamonaviy transport vositalarimiz va tajribali haydovchilarimiz
             orqali har bir yetkazuv jarayonini soddalashtiramiz
           </h4>
-          <div className="flex gap-4 items-center">
+          <div className="flex flex-wrap gap-4 items-center">
             <div className="flex items-center gap-2">
               <img src="/images/Polygon.svg" alt="polygon" />
               <h3 className="text-[20px] font-[600] leading-[130%] text-white">Tez yo‘nalishlar</h3>
@@ -23,7 +23,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <h1 className="text-[80px] font-[700] leading-[100%] text-[#fff]  min-[1100px]:text-center">
+        <h1 className="text-[50px] min-[700px]:text-[80px] font-[700] leading-[100%] text-[#fff]  min-[1100px]:text-center">
           Shaharlararo yuk tashish
         </h1>
       </div>

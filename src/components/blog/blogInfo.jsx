@@ -1,7 +1,7 @@
 function BlogInfo() {
   return (
-    <div className="py-10 min-[600px]:py-20 px-5 min-[600px]:px-10 bg-white">
-      <div className="max-w-[1200px] mx-auto pt-[50px]">
+    <div className="py-10 min-[550px]:py-20 px-5 min-[550px]:px-10 bg-white">
+      <div className="max-w-[1200px] mx-auto pt-[100px] min-[550px]:pt-[50px]">
         <h2 className="header3 mb-8 text-primary">
           Issiqlik mehnat unumdorligiga salbiy ta’sir qiladi: ijtimoiy himoya
           bunga tayyormi?

@@ -1,7 +1,7 @@
 function PointsSection() {
   return (
     <div className="py-10 min-[550px]:py-20 px-5 min-[550px]:px-10 bg-secondary">
-      <div className="max-w-[1200px] mx-auto grid grid-cols-2 gap-6">
+      <div className="max-w-[1200px] mx-auto grid grid-cols-1 min-[700px]:grid-cols-2 gap-6">
         <div className="flex flex-col">
           <div className="flex items-center gap-2 mb-4">
             <img src="/images/Polygon.svg" alt="polygon" />
@@ -10,7 +10,7 @@ function PointsSection() {
           <h2 className="header2 mb-6 text-primary">
             Mijozlar biz haqimizda nima deydi
           </h2>
-          <p className="font-[500] text-[18px] leading-[150%] mb-8 text-secondary">
+          <p className="paragraph-lg mb-8 text-secondary">
             Logistika sohasida ajoyib xizmat va ishonchlilik, yukingiz samarali
             boshqarilishini va o'z vaqtida yetkazib berilishini ta'minlaydi.
           </p>
@@ -39,11 +39,11 @@ function PointsSection() {
                   25 May 2025
                 </p>
               </div>
-              <p className="text-[16px] leading-[150%] font-[400] text-secondary mb-5">
+              <p className="paragraph-md text-secondary mb-5">
                 “Yuklarimizni doim o‘z vaqtida yetkazishadi. Xizmat sifati va
                 aloqa madaniyati juda yuqori — ishonch bilan hamkorlik qilamiz.”
               </p>
-              <p className="text-[16px] leading-[150%] font-[400] text-secondary mb-[10px]">
+              <p className="paragraph-md text-secondary mb-[10px]">
                 Jasur Karimov
               </p>
               <h4 className="text-[20px] leading-[130%] font-[500] text-secondary">
@@ -57,11 +57,11 @@ function PointsSection() {
                   1 Iyun 2025
                 </p>
               </div>
-              <p className="text-[16px] leading-[150%] font-[400] text-secondary mb-5">
+              <p className="paragraph-md text-secondary mb-5">
                 “Har bir yuk uchun kuzatuv tizimi juda qulay. Muhim yuklarimizni
                 bemalol ishonib topshiramiz.”
               </p>
-              <p className="text-[16px] leading-[150%] font-[400] text-secondary mb-[10px]">
+              <p className="paragraph-md text-secondary mb-[10px]">
                 Malika Raxmonova
               </p>
               <h4 className="text-[20px] leading-[130%] font-[500] text-secondary">

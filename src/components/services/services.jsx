@@ -2,10 +2,10 @@ import Button from "../ui/button";
 
 function Services() {
   return (
-    <div className="py-10 min-[600px]:py-20 px-5 min-[600px]:px-10 bg-secondary">
-      <div className="max-w-[1200px] mx-auto flex justify-between gap-[185px] mb-10">
+    <div className="py-10 min-[550px]:py-20 px-5 min-[550px]:px-10 bg-secondary">
+      <div className="max-w-[1200px] mx-auto flex justify-between flex-col min-[700px]:flex-row min-[700px]:gap-[185px] mb-10">
         <div className="flex  items-start  ">
-          <div className="flex items-center gap-2 max-[600px]:mb-4">
+          <div className="flex items-center gap-2 max-[700px]:mb-4">
             <img src="/images/Polygon.svg" alt="polygon" />
             <h6 className="header6 text-primary">Xizmatlar</h6>
           </div>
@@ -23,7 +23,7 @@ function Services() {
         </div>
       </div>
       <div className="max-w-[1200px] mx-auto flex flex-col gap-5">
-        <div className="p-10 rounded-[12px] bg-white grid grid-cols-2 items-center gap-6">
+        <div className="p-6 min-[700px]:p-10 rounded-[12px] bg-white grid grid-cols-1 min-[700px]:grid-cols-2 items-center gap-6">
           <div>
             <h3 className="header3 text-primary mb-6">
               Shaharlararo yuk tashish
@@ -38,14 +38,14 @@ function Services() {
           <img
             src="/images/services/service-1.png"
             alt="services1"
-            className="w-full h-full object-cover rounded-[12px]"
+            className="w-full h-[350px] min-[700px]:h-full object-cover rounded-[12px]"
           />
         </div>
-        <div className="p-10 rounded-[12px] bg-white grid grid-cols-2 items-center gap-6">
+        <div className="p-6 min-[700px]:p-10 rounded-[12px] bg-white flex flex-col-reverse min-[700px]:grid  min-[700px]:grid-cols-2 items-center gap-6">
           <img
             src="/images/services/service-2.png"
             alt="services1"
-            className="w-full h-full object-cover rounded-[12px]"
+            className="w-full h-[350px] min-[700px]:h-full object-cover rounded-[12px]"
           />
           <div>
             <h3 className="header3 text-primary mb-6">Xalqaro yuk tashish</h3>
@@ -58,7 +58,7 @@ function Services() {
             <Button>To’liq ma’lumot</Button>
           </div>
         </div>
-        <div className="p-10 rounded-[12px] bg-white grid grid-cols-2 items-center gap-6">
+        <div className="p-6 min-[700px]:p-10 rounded-[12px] bg-white grid grid-cols-1 min-[700px]:grid-cols-2 items-center gap-6">
           <div>
             <h3 className="header3 text-primary mb-6">
               Tezkor yetkazib berish
@@ -73,14 +73,14 @@ function Services() {
           <img
             src="/images/services/service-3.png"
             alt="services3"
-            className="w-full h-full object-cover rounded-[12px]"
+            className="w-full h-[350px] min-[700px]:h-full object-cover rounded-[12px]"
           />
         </div>
-        <div className="p-10 rounded-[12px] bg-white grid grid-cols-2 items-center gap-6">
+        <div className="p-6 min-[700px]:p-10 rounded-[12px] bg-white flex flex-col-reverse min-[700px]:grid min-[700px]:grid-cols-2 items-center gap-6">
           <img
             src="/images/services/services-41.png"
             alt="services4"
-            className="w-full h-full object-cover rounded-[12px]"
+            className="w-full h-[350px] min-[700px]:h-full object-cover rounded-[12px]"
           />
           <div>
             <h3 className="header3 text-primary mb-6">Maxsus yuk tashish</h3>
@@ -92,7 +92,7 @@ function Services() {
             <Button>To’liq ma’lumot</Button>
           </div>
         </div>
-        <div className="p-10 rounded-[12px] bg-white grid grid-cols-2 items-center gap-6">
+        <div className="p-6 min-[700px]:p-10 rounded-[12px] bg-white grid grid-cols-1 min-[700px]:grid-cols-2 items-center gap-6">
           <div>
             <h3 className="header3 text-primary mb-6">
               Sklad va saqlash xizmati
@@ -107,7 +107,7 @@ function Services() {
           <img
             src="/images/services/service-5.png"
             alt="services5"
-            className="w-full h-full object-cover rounded-[12px]"
+            className="w-full h-[350px] min-[700px]:h-full object-cover rounded-[12px]"
           />
         </div>
       </div>

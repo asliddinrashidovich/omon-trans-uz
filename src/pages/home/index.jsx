@@ -1,7 +1,6 @@
 import AboutSection from "../../components/home/about";
 import AvtoParkSection from "../../components/home/avtopark";
 import ContactSection from "../../components/home/contact";
-import Footer from "../../components/home/footer";
 import Hero from "../../components/home/hero";
 import Navbar from "../../components/home/navbar";
 import PointsSection from "../../components/home/points";
@@ -19,7 +18,6 @@ function HomePage() {
       <QuestionsSection />
       <PointsSection />
       <ContactSection />
-      <Footer />
     </>
   );
 }
