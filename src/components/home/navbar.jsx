@@ -18,7 +18,7 @@ function Navbar() {
             <span className="absolute left-0 bottom-[-2px] rounded-[2px] h-[1px] w-0 bg-[#3E8EF4] transition-all duration-300 group-hover:w-full"></span>
           </li>
           <li className=" cursor-pointer relative  inline-block group">
-            <Link className="p-[6px] font-[400] translate-all duration-300  text-[16px] group-hover:text-[#3E8EF4] text-white leading-[150%]" to={"/services"}>Bizmatlar</Link>
+            <Link className="p-[6px] font-[400] translate-all duration-300  text-[16px] group-hover:text-[#3E8EF4] text-white leading-[150%]" to={"/services"}>Xizmatlar</Link>
             <span className="absolute left-0 bottom-[-2px] rounded-[2px] h-[1px] w-0 bg-[#3E8EF4] transition-all duration-300 group-hover:w-full"></span>
           </li>
           <li className=" cursor-pointer relative  inline-block group">
