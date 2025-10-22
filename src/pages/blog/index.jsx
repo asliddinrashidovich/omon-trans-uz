@@ -1,17 +1,11 @@
-import AboutBlog from "../../components/blog/about";
-import Hero from "../../components/blog/hero";
-import Navbar from "../../components/blog/navbar";
-import ServicesSection from "../../components/blog/services";
-import FooterShowcase from "../../components/footer-showcase";
+import Blog from "../../components/blog/blog";
+import Navbar from "../../components/navbar";
 
 function BlogPage() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <AboutBlog />
-      <ServicesSection />
-      <FooterShowcase />
+      <Blog />
     </>
   );
 }

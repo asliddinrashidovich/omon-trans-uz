@@ -1,9 +1,8 @@
-import Button from "../ui/button";
 
 function Hero() {
   return (
-    <div className="flex px-5 min-[550px]:px-10 py-[10px] items-center hero-blog min-[900px]:h-[100vh]">
-      <div className="max-w-[1200px] pt-[150px] mx-auto grid grid-cols-2 gap-6">
+    <div className="flex px-5 min-[550px]:px-10 py-[10px] items-center hero-blog h-[100vh]">
+      <div className="max-w-[1200px] pt-[150px] pb-[100px] mx-auto flex max-[1100px]:flex-col-reverse min-[1100px]:grid min-[1100px]:grid-cols-2 gap-6">
         <div>
           <h4 className="header4 text-white mb-6">
             Zamonaviy transport vositalarimiz va tajribali haydovchilarimiz
@@ -24,7 +23,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <h1 className="text-[80px] font-[700] leading-[100%] text-[#fff] text-center">
+        <h1 className="text-[80px] font-[700] leading-[100%] text-[#fff]  min-[1100px]:text-center">
           Shaharlararo yuk tashish
         </h1>
       </div>

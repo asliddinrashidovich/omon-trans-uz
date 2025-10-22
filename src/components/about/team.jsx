@@ -9,16 +9,16 @@ function TeamSection() {
             <h3 className="header6 text-primary">Jamoa</h3>
           </div>
         </div>
-        <div className="max-w-[792px] w-full">
+        <div className="max-w-[495px] min-[1100px]:max-w-[792px] w-full">
           <h2 className="text-primary header2 mb-6">
             Logistika bo'yicha mutaxassislarimiz bilan tanishing
           </h2>
         </div>
       </div>
-      <div className="max-w-[1200px] mx-auto grid grid-cols-4 gap-6">
+      <div className="max-w-[1200px] mx-auto grid-cols-2 min-[1100px]:grid-cols-4 grid  gap-6">
         <div className="rounded-[12px] bg-secondary">
-          <div className="h-[300px]">
-            <img src="/images/about/person-1.svg" className="w-full object-cover" alt="person-1" />
+          <div className="max-h-[300px] h-full rounded-tl-[12px] rounded-tr-[12px] overflow-hidden">
+            <img src="/images/about/person-1.svg" className="w-full h-full object-cover" alt="person-1" />
           </div>
           <div className="p-4">
             <h5 className="header5 mb-2 text-primary">Marie Louise</h5>
@@ -26,8 +26,8 @@ function TeamSection() {
           </div>
         </div>
         <div className="rounded-[12px] bg-secondary">
-          <div className="h-[300px]">
-            <img src="/images/about/person-2.svg" className="w-full object-cover" alt="person-2" />
+          <div className="max-h-[300px] h-full rounded-tl-[12px] rounded-tr-[12px] overflow-hidden">
+            <img src="/images/about/person-2.svg" className="w-full h-full object-cover" alt="person-2" />
           </div>
           <div className="p-4">
             <h5 className="header5 mb-2 text-primary">Miguel Ángel</h5>
@@ -35,8 +35,8 @@ function TeamSection() {
           </div>
         </div>
         <div className="rounded-[12px] bg-secondary">
-          <div className="h-[300px]">
-            <img src="/images/about/person-3.svg" className="w-full object-cover" alt="person-3" />
+          <div className="max-h-[300px] h-full rounded-tl-[12px] rounded-tr-[12px] overflow-hidden">
+            <img src="/images/about/person-3.svg" className="w-full h-full object-cover" alt="person-3" />
           </div>
           <div className="p-4">
             <h5 className="header5 mb-2 text-primary">Francesco Paolo</h5>
@@ -44,8 +44,8 @@ function TeamSection() {
           </div>
         </div>
         <div className="rounded-[12px] bg-secondary">
-          <div className="h-[300px]">
-            <img src="/images/about/person-4.svg" className="w-full object-cover" alt="person-4" />
+          <div className="max-h-[300px] h-full rounded-tl-[12px] rounded-tr-[12px] overflow-hidden">
+            <img src="/images/about/person-4.svg" className="w-full h-full object-cover" alt="person-4" />
           </div>
           <div className="p-4">
             <h5 className="header5 mb-2 text-primary">Sven Erik</h5>

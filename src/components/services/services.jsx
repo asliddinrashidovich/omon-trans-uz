@@ -38,14 +38,14 @@ function Services() {
           <img
             src="/images/services/service-1.png"
             alt="services1"
-            className="w-full"
+            className="w-full h-full object-cover rounded-[12px]"
           />
         </div>
         <div className="p-10 rounded-[12px] bg-white grid grid-cols-2 items-center gap-6">
           <img
             src="/images/services/service-2.png"
             alt="services1"
-            className="w-full"
+            className="w-full h-full object-cover rounded-[12px]"
           />
           <div>
             <h3 className="header3 text-primary mb-6">Xalqaro yuk tashish</h3>
@@ -73,14 +73,14 @@ function Services() {
           <img
             src="/images/services/service-3.png"
             alt="services3"
-            className="w-full"
+            className="w-full h-full object-cover rounded-[12px]"
           />
         </div>
         <div className="p-10 rounded-[12px] bg-white grid grid-cols-2 items-center gap-6">
           <img
             src="/images/services/services-41.png"
             alt="services4"
-            className="w-full"
+            className="w-full h-full object-cover rounded-[12px]"
           />
           <div>
             <h3 className="header3 text-primary mb-6">Maxsus yuk tashish</h3>
@@ -107,7 +107,7 @@ function Services() {
           <img
             src="/images/services/service-5.png"
             alt="services5"
-            className="w-full"
+            className="w-full h-full object-cover rounded-[12px]"
           />
         </div>
       </div>

@@ -1,13 +1,13 @@
 function AboutSection() {
   return (
     <div className="py-10 min-[600px]:py-20 px-5 min-[600px]:px-10 bg-secondary">
-      <div className="max-w-[1200px] mx-auto flex gap-6 items-start mb-10">
-        <div className="flex flex-row min-[900px]:flex-col justify-between">
-          <div className="flex items-center gap-2 mb-4">
+      <div className="max-w-[1200px] mx-auto flex flex-col min-[1100px]:flex-row gap-6 min-[1100px]:items-start mb-10">
+        <div className="flex items-start flex-row min-[1100px]:flex-col justify-between">
+          <div className="flex items-center flex-nowrap gap-2 mb-4">
             <img src="/images/Polygon.svg" alt="polygon" />
             <h3 className="header6">Biz haqimizda</h3>
           </div>
-          <h2 className="header1 text-primary">
+          <h2 className="header1 max-[1100px]:max-w-[495px]  text-primary">
             Har bir jo'natishda mukammallikni ta'minlash
           </h2>
         </div>
@@ -38,23 +38,27 @@ function AboutSection() {
           <hr className="border-main" />
         </div>
       </div>
-      <div className="max-w-[1200px] mx-auto grid gap-6 grid-cols-3 grid-rows-3">
-        <div className="rounded-[12px] row-span-1 border-main p-10 bg-white border-[1px]">
-          <p className="leading-[120%] text-[80px] font-[600] mb-1">10+</p>
-          <p className="paragraph-lg text-secondary">Bozorda tajriba</p>
+      <div className="max-w-[1200px] max-[900px]:max-h-[1000px] mx-auto grid gap-6 grid-cols-2 min-[900px]:grid-cols-3 grid-rows-4 min-[900px]:grid-rows-3">
+        <div className="rounded-[12px] flex items-center row-span-1 max-[900px]:row-start-1 border-main p-10 bg-white border-[1px]">
+          <div>
+            <p className="leading-[120%] text-[80px] font-[600] mb-1">10+</p>
+            <p className="paragraph-lg text-secondary">Bozorda tajriba</p>
+          </div>
         </div>
-        <div className="rounded-[12px] row-span-2 overflow-hidden">
-          <img src="/images/about/column-1.svg" className="w-full object-cover" alt="column1" />
+        <div className="rounded-[12px] max-[900px]:row-start-4 max-[900px]:row-span-1 row-span-2 overflow-hidden">
+          <img src="/images/about/column-1.svg" className="w-full h-full object-cover object-center" alt="column1" />
         </div>
-        <div className="rounded-[12px] row-span-3 overflow-hidden">
-          <img src="/images/about/Column-2.svg" className="w-full object-cover" alt="column1" />
+        <div className="rounded-[12px] max-[900px]:row-start-2 max-[900px]:col-span-2 row-span-2 min-[900px]:row-span-3 overflow-hidden">
+          <img src="/images/about/Column-2.svg" className="w-full h-full object-cover object-center" alt="column1" />
         </div>
-        <div className="rounded-[12px] row-span-2 overflow-hidden">
-          <img src="/images/about/column-3.svg" className="w-full object-cover" alt="column1" />
+        <div className="rounded-[12px] max-[900px]:row-start-1 row-span-1 min-[900px]:row-span-2 overflow-hidden">
+          <img src="/images/about/column-3.svg" className="w-full h-full object-cover object-center" alt="column1" />
         </div>
-        <div className="rounded-[12px] row-span-1 border-main p-10 bg-white border-[1px]">
-          <p className="leading-[120%] text-[80px] font-[600] mb-1">10k+</p>
-          <p className="paragraph-lg text-secondary">Yetkazilgan yuklar soni</p>
+        <div className="rounded-[12px] flex items-center row-span-1 border-main p-10 bg-white border-[1px]">
+          <div>
+            <p className="leading-[120%] text-[80px] font-[600] mb-1">10k+</p>
+            <p className="paragraph-lg text-secondary">Yetkazilgan yuklar soni</p>
+          </div>
         </div>
       </div>
     </div>

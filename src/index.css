@@ -8,6 +8,7 @@ body {
 .footer-showcase {
   background-image: url(../public/images/footer-showcase.svg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 .hero-blog {

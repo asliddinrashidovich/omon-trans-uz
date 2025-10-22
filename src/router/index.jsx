@@ -7,7 +7,8 @@ import AboutPage from "../pages/about";
 import ServicesPage from "../pages/services";
 import BlogPage from "../pages/blog";
 import AvtoParkPage from "../pages/avtoPark";
-import ServiceOnePage from "../pages/services/servicesInfo";
+import ServiceOnePage from "../pages/servicesInfo/servicesInfo";
+import BlogInfoPage from "../pages/blogInfo/blogInfoPage";
 
 export default function MyRoutes() {
   return (
@@ -18,6 +19,7 @@ export default function MyRoutes() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/services/one" element={<ServiceOnePage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/one" element={<BlogInfoPage />} />
         <Route path="/avtopark" element={<AvtoParkPage />} />
       </Route>
 

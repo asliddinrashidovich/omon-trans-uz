@@ -1,13 +1,13 @@
 function PointsSection() {
   return (
-    <div className="py-20 px-10 bg-secondary">
+    <div className="py-10 min-[550px]:py-20 px-5 min-[550px]:px-10 bg-secondary">
       <div className="max-w-[1200px] mx-auto grid grid-cols-2 gap-6">
         <div className="flex flex-col">
           <div className="flex items-center gap-2 mb-4">
             <img src="/images/Polygon.svg" alt="polygon" />
-            <h3 className="font-[500] leading-[130%] text-[20px]">Fikrlar</h3>
+            <h3 className="header6">Fikrlar</h3>
           </div>
-          <h2 className="font-[500] text-[48px] leading-[120%] mb-6 text-primary">
+          <h2 className="header2 mb-6 text-primary">
             Mijozlar biz haqimizda nima deydi
           </h2>
           <p className="font-[500] text-[18px] leading-[150%] mb-8 text-secondary">

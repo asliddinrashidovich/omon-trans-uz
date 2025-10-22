@@ -3,19 +3,19 @@ import Button from "../ui/button";
 function ServicesSection() {
   return (
     <div className="py-10 min-[550px]:py-20 px-5 min-[550px]:px-10 bg-white">
-      <div className="max-w-[1200px] mx-auto flex justify-between mb-10 gap-[10px]">
+      <div className="max-w-[1200px] mx-auto flex max-[800px]:flex-col flex-row justify-between mb-10 gap-[10px]">
         <div className="flex flex-col justify-between">
-          <div className="flex items-center gap-2  max-[550px]:mb-5">
+          <div className="flex items-center gap-2  max-[800px]:mb-5">
             <img src="/images/Polygon.svg" alt="polygon" />
             <h3 className="font-[500] leading-[130%] text-[20px]">Xizmatlar</h3>
           </div>
-          <h2 className="text-primary text-[32px]  min-[550px]:hidden font-[500] leading-[120%] mb-4 min-[550px]:mb-6">
+          <h2 className="text-primary  min-[800px]:hidden header2 mb-4 min-[550px]:mb-6">
             Bizning xizmatlar – har bir yuk xavfsiz va o‘z vaqtida manzilga
             yetadi.
           </h2>
-          <Button className={"w-auto min-[550px]:w-full"}>Barcha xizmatlar</Button>
+          <Button className={"w-auto min-[800px]:w-full"}>Barcha xizmatlar</Button>
         </div>
-        <div className="max-w-[492px]  max-[550px]:hidden min-[1100px]:max-w-[792px] w-full">
+        <div className="max-w-[492px]  max-[800px]:hidden min-[1100px]:max-w-[792px] w-full">
           <h2 className="text-primary text-[48px] font-[500] leading-[120%] mb-6">
             Bizning xizmatlar – har bir yuk xavfsiz va o‘z vaqtida manzilga
             yetadi.
