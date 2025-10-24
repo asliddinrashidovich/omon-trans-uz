@@ -27,21 +27,21 @@ function ServicesSection() {
           <h3 className="text-[28px] min-[550px]:text-[36px] leading-[120%] font-[600]">
             {t("servicesSection1")}
           </h3>
-          <Button url="/services/1" className={"text-nowrap"} type={"secondary"}>{t("allInfo")}</Button>
+          <Button url={`/services/${1}-${t("servicesSection1")}`} className={"text-nowrap"} type={"secondary"}>{t("allInfo")}</Button>
         </div>
         <hr className="my-5 border-main" />
         <div className="flex max-[550px]:flex-col items-start gap-5 min-[550px]:items-center w-full justify-between py-[10px]">
           <h3 className="text-[28px] min-[550px]:text-[36px] leading-[120%] font-[600]">
             {t("servicesSection2")}
           </h3>
-          <Button url="/services/1" className={"text-nowrap"} type={"secondary"}>{t("allInfo")}</Button>
+          <Button url={`/services/${2}-${t("servicesSection2")}`} className={"text-nowrap"} type={"secondary"}>{t("allInfo")}</Button>
         </div>
         <hr className="my-5 border-main" />
         <div className="flex max-[550px]:flex-col items-start gap-5 min-[550px]:items-center w-full justify-between py-[10px]">
           <h3 className="text-[28px] min-[550px]:text-[36px] leading-[120%] font-[600]">
             {t("servicesSection3")}
           </h3>
-          <Button url="/services/1" className={"text-nowrap"} type={"secondary"}>{t("allInfo")}</Button>
+          <Button url={`/services/${3}-${t("servicesSection3")}`} className={"text-nowrap"} type={"secondary"}>{t("allInfo")}</Button>
         </div>
         <hr className="my-5 border-main" />
       </div>

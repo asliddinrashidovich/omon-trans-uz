@@ -31,7 +31,6 @@ html {
   border: none !important;
   font-size: 17px !important; 
   font-weight: 400 !important;
-  /* color: #ACA6A6 !important; */
 }
 .footer-showcase {
   background-image: url(/images/footer-showcase.svg);
@@ -39,8 +38,28 @@ html {
   background-position: center;
   background-size: cover;
 }
-.hero-blog {
-  background-image: url(/images/blog/blog-bg.png);
+.hero-blog-1 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/blog/blog-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-blog-2 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/services/service-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-blog-3 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/services/service-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-blog-4 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/services/services-41.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-blog-5 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/services/service-5.png);
   background-repeat: no-repeat;
   background-size: cover;
 }

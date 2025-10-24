@@ -38,7 +38,7 @@ function Services() {
               <p className="paragraph-lg text-secondary mb-8">
                 {item.text}
               </p>
-              <Button url={`/services/${item.id}`}>{t("allInfo")}</Button>
+              <Button url={`/services/${item.id}-${item.title}`}>{t("allInfo")}</Button>
             </div>
             {!item.isImgPositionReverse && <img
               src={item.img}

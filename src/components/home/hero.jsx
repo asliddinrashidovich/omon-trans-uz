@@ -16,15 +16,13 @@ function Hero() {
 
     try {
       await axios.post(
-          `https://api.omon-trans.uz/api/requests/`,
-          { name, phone_number: phone, description: "asd" },
-          { headers: { "Content-Type": "application/json" } }
-        )
-        .then(() => {
-          toast.success(t("successMessage"));
-        })
+        "/api/requests/",
+        { name, phone_number: phone, description: "" },
+        { headers: { "Content-Type": "application/json" } }
+      );
+      toast.success(t("successMessage"))
     } catch (error) {
-      console.log(error)
+      console.log(error);
       toast.error("Something went wrong");
     }
   };

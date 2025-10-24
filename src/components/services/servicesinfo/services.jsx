@@ -23,14 +23,14 @@ function ServicesSection() {
       <div className="max-w-[1200px] mx-auto">
         <div className="flex max-[550px]:flex-col items-start gap-10 min-[700px]:gap-5 min-[550px]:items-center w-full justify-between py-[10px]">
           <h3 className="header3 text-primary">{t("serviceInfoOtherServices1")}</h3>
-          <Button className={"text-nowrap"} type={"secondary"}>
+          <Button url={`/services/${4}-${t("serviceInfoOtherServices1")}`} className={"text-nowrap"} type={"secondary"}>
             {t("allInfo")}
           </Button>
         </div>
         <hr className="my-5 border-main" />
         <div className="flex max-[550px]:flex-col items-start gap-10 min-[700px]:gap-5 min-[550px]:items-center w-full justify-between py-[10px]">
           <h3 className="header3 text-primary">{t("serviceInfoOtherServices2")}</h3>
-          <Button className={"text-nowrap"} type={"secondary"}>
+          <Button url={`/services/${2}-${t("serviceInfoOtherServices2")}`} className={"text-nowrap"} type={"secondary"}>
             {t("allInfo")}
           </Button>
         </div>
@@ -39,7 +39,7 @@ function ServicesSection() {
           <h3 className="header3 text-primary">
             {t("serviceInfoOtherServices3")}
           </h3>
-          <Button className={"text-nowrap"} type={"secondary"}>
+          <Button url={`/services/${3}-${t("serviceInfoOtherServices3")}`} className={"text-nowrap"} type={"secondary"}>
             {t("allInfo")}
           </Button>
         </div>

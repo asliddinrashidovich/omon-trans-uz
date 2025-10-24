@@ -9,21 +9,25 @@ import BlogPage from "../pages/blog";
 import AvtoParkPage from "../pages/avtoPark";
 import ServiceOnePage from "../pages/servicesInfo/servicesInfo";
 import BlogInfoPage from "../pages/blogInfo/blogInfoPage";
+import ScrollToTop from "../components/scrollTop";
 
 export default function MyRoutes() {
   return (
-    <Routes>
-      <Route element={<MainLayout />}>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/services/:id" element={<ServiceOnePage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/:id" element={<BlogInfoPage />} />
-        <Route path="/avtopark" element={<AvtoParkPage />} />
-      </Route>
+    <>
+      <ScrollToTop/>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services/:id" element={<ServiceOnePage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:id" element={<BlogInfoPage />} />
+          <Route path="/avtopark" element={<AvtoParkPage />} />
+        </Route>
 
-      <Route path="*" element={<NotFoundPage />} />
-    </Routes>
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </>
   );
 }
