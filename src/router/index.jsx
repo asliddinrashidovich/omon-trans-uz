@@ -17,9 +17,9 @@ export default function MyRoutes() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicesPage />} />
-        <Route path="/services/one" element={<ServiceOnePage />} />
+        <Route path="/services/:id" element={<ServiceOnePage />} />
         <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/one" element={<BlogInfoPage />} />
+        <Route path="/blog/:id" element={<BlogInfoPage />} />
         <Route path="/avtopark" element={<AvtoParkPage />} />
       </Route>
 

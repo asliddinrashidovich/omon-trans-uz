@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import Button from "../ui/button";
 
 function AboutSection() {
+  const {t} = useTranslation()
   return (
     <div className="py-10 min-[550px]:py-20 px-5 min-[550px]:px-10 bg-secondary">
       <div className="max-w-[1200px] mx-auto bg-[#FFFFFF0D] flex flex-col min-[900px]:flex-row justify-between gap-6 min-[900px]:gap-[237px] mb-10">
@@ -8,22 +10,18 @@ function AboutSection() {
           <div className="flex items-center gap-2 ">
             <img src="/images/Polygon.svg" alt="polygon" />
             <h6 className="header6 text-primary">
-              Biz haqimizda
+              {t("about")}
             </h6>
           </div>
-          <Button className={"max-[600px]:hidden"}>Batafsil</Button>
+          <Button url={"/about"} className={"max-[600px]:hidden"}>{t("readMore")}</Button>
         </div>
         <div className="max-w-[792px]">
           <h2 className="text-primary text-[32px] min-[600px]:text-[48px] font-[500] leading-[120%] mb-6">
-            <span className="text-secondary">Biz faqat</span> yuk tashimaymiz{" "}
-            <span className="text-secondary">— biz</span> ishonch yetkazamiz.
+              {t("aboutHeaderInHome")}
           </h2>
-          <Button className={"min-[600px]:hidden mb-7"}>Batafsil</Button>
+          <Button url={"/about"} className={"min-[600px]:hidden mb-7"}>{t("readMore")}</Button>
           <p className="paragraph-lg text-secondary">
-            OMON-TRANS — logistika sohasida yillar davomida mijozlar ishonchini
-            qozongan kompaniya. Bizning maqsadimiz — yuklaringizni xavfsiz, tez
-            va optimal narxda manzilga yetkazish. Innovatsion texnologiyalar
-            yordamida har bir mijoz uchun individual yechimlar taklif qilamiz.
+            {t("aboutText")}
           </p>
         </div>
       </div>
@@ -36,7 +34,7 @@ function AboutSection() {
               </p>
             </div>
             <h4 className="text-[16px] leading-[130%] font-semibold">
-              Professional yondashuv
+              {t("aboutSection1")}
             </h4>
           </div>
           <div className="rounded-[60px] bg-white w-full flex items-center gap-3 p-2">
@@ -46,7 +44,7 @@ function AboutSection() {
               </p>
             </div>
             <h4 className="text-[16px] leading-[130%] font-semibold">
-              Ishonchli tajriba
+              {t("aboutSection2")}
             </h4>
           </div>
           <div className="rounded-[60px] bg-white w-full flex items-center gap-3 p-2">
@@ -56,7 +54,7 @@ function AboutSection() {
               </p>
             </div>
             <h4 className="text-[16px] leading-[130%] font-semibold">
-              Innovatsion yechimlar
+              {t("aboutSection3")}
             </h4>
           </div>
         </div>

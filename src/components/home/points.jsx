@@ -1,18 +1,20 @@
+import { useTranslation } from "react-i18next";
+
 function PointsSection() {
+  const {t} = useTranslation()
   return (
     <div className="py-10 min-[550px]:py-20 px-5 min-[550px]:px-10 bg-secondary">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 min-[700px]:grid-cols-2 gap-6">
         <div className="flex flex-col">
           <div className="flex items-center gap-2 mb-4">
             <img src="/images/Polygon.svg" alt="polygon" />
-            <h3 className="header6">Fikrlar</h3>
+            <h3 className="header6">{t("points")}</h3>
           </div>
           <h2 className="header2 mb-6 text-primary">
-            Mijozlar biz haqimizda nima deydi
+            {t("pointsHeader")}
           </h2>
           <p className="paragraph-lg mb-8 text-secondary">
-            Logistika sohasida ajoyib xizmat va ishonchlilik, yukingiz samarali
-            boshqarilishini va o'z vaqtida yetkazib berilishini ta'minlaydi.
+            {t("pointsText")}
           </p>
           <div className="flex gap-4 items-center ">
             <div className="p-1">
@@ -40,8 +42,7 @@ function PointsSection() {
                 </p>
               </div>
               <p className="paragraph-md text-secondary mb-5">
-                “Yuklarimizni doim o‘z vaqtida yetkazishadi. Xizmat sifati va
-                aloqa madaniyati juda yuqori — ishonch bilan hamkorlik qilamiz.”
+                {t("points1")}
               </p>
               <p className="paragraph-md text-secondary mb-[10px]">
                 Jasur Karimov
@@ -58,8 +59,7 @@ function PointsSection() {
                 </p>
               </div>
               <p className="paragraph-md text-secondary mb-5">
-                “Har bir yuk uchun kuzatuv tizimi juda qulay. Muhim yuklarimizni
-                bemalol ishonib topshiramiz.”
+                {t("points2")}
               </p>
               <p className="paragraph-md text-secondary mb-[10px]">
                 Malika Raxmonova

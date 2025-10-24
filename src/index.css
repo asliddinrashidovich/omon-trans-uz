@@ -4,15 +4,43 @@
 body {
   font-family: "Urbanist", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+  /* scroll-padding-top: 120px; */
+}
+.home-select .ant-select-selector{
+  background-color: #f2f5fa27 !important;
+  color: #fff !important;
+}
+.home-select .ant-select-selection-item{
+  color: #fff !important;
+}
+.ant-select-selector {
+  background-color: #F2F5FA !important;
+}
+.ant-select-selection-item {
+  color: #1A1A1A !important;
+}
 
+.react-international-phone-country-selector button {
+  background-color: transparent;
+  border: none;
+}
+.react-international-phone-input {
+  background-color: transparent !important;
+  border: none !important;
+  font-size: 17px !important; 
+  font-weight: 400 !important;
+  /* color: #ACA6A6 !important; */
+}
 .footer-showcase {
-  background-image: url(../public/images/footer-showcase.svg);
+  background-image: url(/images/footer-showcase.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .hero-blog {
-  background-image: url(../public/images/blog/blog-bg.png);
+  background-image: url(/images/blog/blog-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }

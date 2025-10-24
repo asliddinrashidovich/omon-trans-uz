@@ -3,12 +3,14 @@ import FooterShowcase from "../../components/footer-showcase";
 import Navbar from "../../components/navbar";
 import TeamSection from "../../components/about/team";
 import Hero from "../../components/hero";
+import { useTranslation } from "react-i18next";
 
 function AboutPage() {
+  const {t} = useTranslation()
   return (
     <>
       <Navbar />
-      <Hero header={"Har bir yetkazuvda tezlik va ishonch"} text={"Biz mijozlarimizga xavfsiz, tezkor va ishonchli logistika yechimlarini taklif etamiz. Tajribali jamoamiz bilan yuk tashishni soddalashtirib, sizning biznesingizga vaqt va ishonch qo‘shamiz."} img={"/images/about/about-bg.svg"} />
+      <Hero header={t("aboutPageHeader")} text={t("aboutPageText")} img={"/images/about/about-bg.svg"} />
       <AboutSection />
       <TeamSection />
       <FooterShowcase />

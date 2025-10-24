@@ -1,17 +1,19 @@
+import { useTranslation } from "react-i18next"
 
 function TeamSection() {
+  const {t} = useTranslation()
   return (
     <div className="py-10 min-[550px]:py-20 px-5 min-[550px]:px-10 bg-white">
       <div className="max-w-[1200px] mx-auto flex flex-col min-[700px]:flex-row justify-between mb-10 gap-[10px]">
         <div className="flex flex-col  justify-between">
           <div className="flex items-center gap-2  max-[550px]:mb-5">
             <img src="/images/Polygon.svg" alt="polygon" />
-            <h3 className="header6 text-primary">Jamoa</h3>
+            <h3 className="header6 text-primary">{t("team")}</h3>
           </div>
         </div>
         <div className="max-w-[495px] min-[1100px]:max-w-[792px] w-full">
           <h2 className="text-primary header2  ">
-            Logistika bo'yicha mutaxassislarimiz bilan tanishing
+            {t("teamHeader")}
           </h2>
         </div>
       </div>
